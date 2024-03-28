@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .div {
+            height: 580px;
+            width: 330px;
+            border-radius: 15px;
+            border: 2px solid black;
+            box-shadow: 5px 5px 5px 5px gray;
+            background:linear-gradient(-45deg, #e99dcb, #c292de,#95a3e0) ;
+            position: fixed;
+            left: 500px;
+            top: 100px;
+            /* overflow: auto ; */
+        }
+
+        .hader {
+            height: 35px;
+            width: 330px;
+            border-bottom: 1px solid black;
+            /* position: fixed; */
+            display: block;
+        }
+
+        .instagram {
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: relative;
+            top: 7px;
+            left: 10px;
+        }
+
+        #plus {
+            position: relative;
+            top: -30px;
+            left: 250px;
+            font-size: 18px;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        #msg {
+            position: relative;
+            top: -30px;
+            left: 270px;
+            color: black;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .storynav {
+            height: 60px;
+            width: 330px;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .story {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            outline: 2px solid red;
+            display: center;
+            align-items: center;
+            position: relative;
+            top: -3px;
+
+        }
+
+        #a {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            padding: 2px 2px 2px 2px;
+            cursor: pointer;
+        }
+
+        #b {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            padding: 2px 2px 2px 2px;
+            cursor: pointer;
+        }
+
+        #c {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            padding: 2px 2px 2px 2px;
+            cursor: pointer;
+        }
+
+        #d {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            padding: 2px 2px 2px 2px;
+            cursor: pointer;
+        }
+
+        #e {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            padding: 2px 2px 2px 2px;
+            cursor: pointer;
+        }
+
+        #f {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            padding: 2px 2px 2px 2px;
+            cursor: pointer;
+        }
+
+        span {
+            font-size: 10px;
+            position: relative;
+            top: -8px;
+            left: 10px;
+        }
+
+
+        .footer {
+            height: 50px;
+            width: 330px;
+            border-top: 1px solid black;
+            position: fixed;
+            top: 630px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        #g {
+            font-size: 23px;
+            color: black;
+            cursor: pointer;
+        }
+
+        #h {
+            font-size: 23px;
+            color: black;
+            cursor: pointer;
+        }
+
+        #i {
+            font-size: 23px;
+            color: black;
+            cursor: pointer;
+        }
+
+        #j {
+            font-size: 23px;
+            color: black;
+            cursor: pointer;
+        }
+
+        #k {
+            font-size: 23px;
+            color: black;
+            cursor: pointer;
+        }
+
+        #l {
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            padding: 1px 1px 1px 1px;
+            cursor: pointer;
+        }
+
+        .post {
+            height: 35px;
+            width: 331px;
+            border-bottom: 1px solid black;
+            position: relative;
+            left: -1px;
+        }
+
+        #m {
+            height: 23px;
+            width: 23px;
+            border-radius: 50%;
+            outline: 1px solid red;
+            padding: 1px;
+            position: relative;
+            top: 5px;
+            left: 10px;
+            cursor: pointer;
+
+        }
+
+        #n {
+            font-size: 10px;
+            position: relative;
+            top: -28px;
+            left: 45px;
+            cursor: pointer;
+        }
+
+        .post1 {
+            height: 250px;
+            width: 330px;
+            border-bottom: 1px solid black;
+        }
+
+        #o {
+            height: 331px;
+            position: relative;
+            left: -.5px;
+            cursor: pointer;
+
+        }
+
+        #p {
+            position: relative;
+            top: -54px;
+            left: 300px;
+            /* background-color: white; */
+            /* border: none; */
+            font-size: 18PX;
+            cursor: pointer;
+        }
+
+        .like-comment-share-shave {
+            height: 70px;
+            width: 330px;
+            /* border: 1px solid black; */
+            position: relative;
+            top: 80px;
+            left: -1px;
+        }
+
+        .event {
+            font-size: 20px;
+            color: black;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        #like {
+            cursor: pointer;
+        }
+
+        #comment {
+            font-size: 22px;
+            position: relative;
+            left: 3px;
+            cursor: pointer;
+        }
+
+        #share {
+            font-size: 18px;
+            position: relative;
+            left: 6px;
+            cursor: pointer;
+        }
+
+        #save {
+            position: relative;
+            left: 230px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="hader">
+            <p class="instagram">Instagram</p>
+            <a id="plus" href="#"><i class="fa fa-plus-square-o"></i> </a>
+            <a id="msg" href="#"><i class="fa fa-comment-o"></i> </a>
+        </div>
+        <div class="storynav">
+            <div class="story"><img id="a" src="Lalit_photo.jpg" alt="Error img"><span>lalit</span></div>
+            <div class="story"><img id="b" src="Sumit.jpeg" alt="Error img"><span>sumit</span></div>
+            <div class="story"><img id="c" src="manoj.jpg" alt="Error img"><span>manoj</span></div>
+            <div class="story"><img id="d" src="Dilip.jpg" alt=""><span>dilip</span></div>
+            <div class="story"><img id="e" src="vivek.jpg" alt="Error img"><span>vivek</span></div>
+            <div class="story"><img id="f" src="mohit.jpg" alt=""><span>mohit</span></div>
+        </div>
+        <div class="post">
+            <img id="m" src="Lalit_photo.jpg" alt="Error img">
+            <p id="n">lalit_1716</p>
+            <a href="#" id="p"><i class="fa fa-ellipsis-v"></i></a>
+        </div>
+        <div class="post1">
+            <video id="o" src="GalleryHover.mp4" loop onmouseover="play()" onmouseout="pause()"></video>
+        </div>
+        <div class="like-comment-share-shave">
+            <a class="event" href="#"><i id="like" class="fa fa-heart-o"></i></a>
+            <a class="event" href="#"><i id="comment" class="fa fa-comment-o"></i></a>
+            <a class="event" href="#"><i id="share" class="fa fa-paper-plane-o"></i></a>
+            <a class="event" href="#"><i id="save" class="fa fa-bookmark-o"></i></a>
+        </div>
+
+
+        <footer class="footer">
+            <a id="g" href="#"><i class="fa fa-home"></i></a>
+            <a id="h" href="#"><i class="fa fa-search"></i></a>
+            <a id="i" href="#"><i class="fa fa-plus-square"></i></a>
+            <a id="j" href="#"><i class="fa fa-heart-o"></i></a>
+            <div>
+                <img id="l" src="Lalit_photo.jpg" alt="Error img">
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
